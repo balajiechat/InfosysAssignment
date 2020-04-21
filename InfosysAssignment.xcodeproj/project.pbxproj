@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		29F1584F244F307A00A2DBBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1584E244F307A00A2DBBF /* AppDelegate.swift */; };
 		29F15851244F307A00A2DBBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F15850244F307A00A2DBBF /* SceneDelegate.swift */; };
-		29F15853244F307A00A2DBBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F15852244F307A00A2DBBF /* ViewController.swift */; };
-		29F15856244F307A00A2DBBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F15854244F307A00A2DBBF /* Main.storyboard */; };
 		29F15858244F307C00A2DBBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F15857244F307C00A2DBBF /* Assets.xcassets */; };
 		29F1585B244F307C00A2DBBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F15859244F307C00A2DBBF /* LaunchScreen.storyboard */; };
 		29F15866244F307D00A2DBBF /* InfosysAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F15865244F307D00A2DBBF /* InfosysAssignmentTests.swift */; };
+		29F15881244F4ACF00A2DBBF /* POCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F15874244F4ACF00A2DBBF /* POCRouter.swift */; };
+		29F15882244F4ACF00A2DBBF /* POCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F15875244F4ACF00A2DBBF /* POCPresenter.swift */; };
+		29F15883244F4ACF00A2DBBF /* POCConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F15876244F4ACF00A2DBBF /* POCConfigurator.swift */; };
+		29F15884244F4ACF00A2DBBF /* POCListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F15878244F4ACF00A2DBBF /* POCListModel.swift */; };
+		29F15885244F4ACF00A2DBBF /* POCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1587A244F4ACF00A2DBBF /* POCViewController.swift */; };
+		29F15887244F4ACF00A2DBBF /* POCInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1587F244F4ACF00A2DBBF /* POCInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +34,18 @@
 		29F1584B244F307A00A2DBBF /* InfosysAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfosysAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F1584E244F307A00A2DBBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29F15850244F307A00A2DBBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		29F15852244F307A00A2DBBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		29F15855244F307A00A2DBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29F15857244F307C00A2DBBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29F1585A244F307C00A2DBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29F1585C244F307C00A2DBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29F15861244F307D00A2DBBF /* InfosysAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfosysAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F15865244F307D00A2DBBF /* InfosysAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosysAssignmentTests.swift; sourceTree = "<group>"; };
 		29F15867244F307D00A2DBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29F15874244F4ACF00A2DBBF /* POCRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POCRouter.swift; sourceTree = "<group>"; };
+		29F15875244F4ACF00A2DBBF /* POCPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POCPresenter.swift; sourceTree = "<group>"; };
+		29F15876244F4ACF00A2DBBF /* POCConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POCConfigurator.swift; sourceTree = "<group>"; };
+		29F15878244F4ACF00A2DBBF /* POCListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POCListModel.swift; sourceTree = "<group>"; };
+		29F1587A244F4ACF00A2DBBF /* POCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POCViewController.swift; sourceTree = "<group>"; };
+		29F1587F244F4ACF00A2DBBF /* POCInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POCInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +87,9 @@
 		29F1584D244F307A00A2DBBF /* InfosysAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				29F15872244F4ACF00A2DBBF /* POC */,
 				29F1584E244F307A00A2DBBF /* AppDelegate.swift */,
 				29F15850244F307A00A2DBBF /* SceneDelegate.swift */,
-				29F15852244F307A00A2DBBF /* ViewController.swift */,
-				29F15854244F307A00A2DBBF /* Main.storyboard */,
 				29F15857244F307C00A2DBBF /* Assets.xcassets */,
 				29F15859244F307C00A2DBBF /* LaunchScreen.storyboard */,
 				29F1585C244F307C00A2DBBF /* Info.plist */,
@@ -97,6 +104,67 @@
 				29F15867244F307D00A2DBBF /* Info.plist */,
 			);
 			path = InfosysAssignmentTests;
+			sourceTree = "<group>";
+		};
+		29F15872244F4ACF00A2DBBF /* POC */ = {
+			isa = PBXGroup;
+			children = (
+				29F15873244F4ACF00A2DBBF /* CPR */,
+				29F15877244F4ACF00A2DBBF /* Models */,
+				29F15879244F4ACF00A2DBBF /* ViewControllers */,
+				29F1587B244F4ACF00A2DBBF /* DataManagers */,
+				29F1587E244F4ACF00A2DBBF /* Interactors */,
+				29F15880244F4ACF00A2DBBF /* Views */,
+			);
+			path = POC;
+			sourceTree = "<group>";
+		};
+		29F15873244F4ACF00A2DBBF /* CPR */ = {
+			isa = PBXGroup;
+			children = (
+				29F15874244F4ACF00A2DBBF /* POCRouter.swift */,
+				29F15875244F4ACF00A2DBBF /* POCPresenter.swift */,
+				29F15876244F4ACF00A2DBBF /* POCConfigurator.swift */,
+			);
+			path = CPR;
+			sourceTree = "<group>";
+		};
+		29F15877244F4ACF00A2DBBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				29F15878244F4ACF00A2DBBF /* POCListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		29F15879244F4ACF00A2DBBF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				29F1587A244F4ACF00A2DBBF /* POCViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		29F1587B244F4ACF00A2DBBF /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		29F1587E244F4ACF00A2DBBF /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				29F1587F244F4ACF00A2DBBF /* POCInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		29F15880244F4ACF00A2DBBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +250,6 @@
 			files = (
 				29F1585B244F307C00A2DBBF /* LaunchScreen.storyboard in Resources */,
 				29F15858244F307C00A2DBBF /* Assets.xcassets in Resources */,
-				29F15856244F307A00A2DBBF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,9 +267,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29F15853244F307A00A2DBBF /* ViewController.swift in Sources */,
+				29F15881244F4ACF00A2DBBF /* POCRouter.swift in Sources */,
+				29F15885244F4ACF00A2DBBF /* POCViewController.swift in Sources */,
 				29F1584F244F307A00A2DBBF /* AppDelegate.swift in Sources */,
+				29F15887244F4ACF00A2DBBF /* POCInteractor.swift in Sources */,
 				29F15851244F307A00A2DBBF /* SceneDelegate.swift in Sources */,
+				29F15882244F4ACF00A2DBBF /* POCPresenter.swift in Sources */,
+				29F15884244F4ACF00A2DBBF /* POCListModel.swift in Sources */,
+				29F15883244F4ACF00A2DBBF /* POCConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		29F15854244F307A00A2DBBF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				29F15855244F307A00A2DBBF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		29F15859244F307C00A2DBBF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,6 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = InfosysAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,6 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = InfosysAssignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
