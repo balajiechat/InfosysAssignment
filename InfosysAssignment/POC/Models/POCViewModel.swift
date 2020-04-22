@@ -17,7 +17,7 @@ struct POCViewModel {
 
     lazy var list: [POCListViewModel]? = {
         let models = pocModel.rows?.map { (model) -> POCListViewModel in
-            return POCListViewModel(title: model.title, description: model.description, imageURL: URL(string: model.imageHref ?? ""))
+            return POCListViewModel(title: model.title, description: model.description, urlString: model.imageHref)
         }
         return models?.filter { $0.title?.isEmpty == false }
     }()
@@ -34,4 +34,9 @@ struct POCListViewModel {
     let description: String?
     let imageURL: URL?
 
+    init(title: String?, description: String?, urlString: String?) {
+        self.title = title?.trimmingCharacters(in: .whitespaces)
+        self.description = description?.trimmingCharacters(in: .whitespaces)
+        self.imageURL = URL(string: urlString ?? "")
+    }
 }
