@@ -12,9 +12,12 @@ import UIKit
 protocol POCPresenterProtocol: class {
 
     var interactor: POCInteractorInputProtocol? { get set }
+
+    func getData()
+
 }
 
-class POCPresenter: POCPresenterProtocol, POCInteractorOutputProtocol {
+class POCPresenter: POCPresenterProtocol {
 
     weak private var view: POCViewProtocol?
     var interactor: POCInteractorInputProtocol?
@@ -24,6 +27,19 @@ class POCPresenter: POCPresenterProtocol, POCInteractorOutputProtocol {
         self.view = interface
         self.interactor = interactor
         self.router = router
+    }
+
+    func getData() {
+        self.interactor?.getData()
+    }
+
+
+}
+
+extension POCPresenter: POCInteractorOutputProtocol {
+
+    func sendData(model: POCViewModel) {
+        self.view?.updateUI(with: model)
     }
 
 }

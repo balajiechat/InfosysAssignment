@@ -16,11 +16,16 @@ struct POCViewModel {
     }()
 
     lazy var list: [POCListViewModel]? = {
-        return pocModel.rows.map { (model) -> POCListViewModel in
-            return POCListViewModel(title: model.title, description: model.description, imageURL: URL(string: model.imageHref))
+        let models = pocModel.rows?.map { (model) -> POCListViewModel in
+            return POCListViewModel(title: model.title, description: model.description, imageURL: URL(string: model.imageHref ?? ""))
         }
+        return models?.filter { $0.title?.isEmpty == false }
     }()
 
+    init(model: POCModel) {
+        pocModel = model
+    }
+    
 }
 
 struct POCListViewModel {

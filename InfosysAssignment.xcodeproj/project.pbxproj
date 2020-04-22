@@ -20,6 +20,7 @@
 		29F15887244F4ACF00A2DBBF /* POCInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1587F244F4ACF00A2DBBF /* POCInteractor.swift */; };
 		29F15889244F77C400A2DBBF /* POCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F15888244F77C400A2DBBF /* POCViewModel.swift */; };
 		29F1588B24501AD400A2DBBF /* POCListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1588A24501AD400A2DBBF /* POCListTableViewCell.swift */; };
+		29F1588D245032B000A2DBBF /* POCDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1588C245032B000A2DBBF /* POCDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		29F1587F244F4ACF00A2DBBF /* POCInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POCInteractor.swift; sourceTree = "<group>"; };
 		29F15888244F77C400A2DBBF /* POCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCViewModel.swift; sourceTree = "<group>"; };
 		29F1588A24501AD400A2DBBF /* POCListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCListTableViewCell.swift; sourceTree = "<group>"; };
+		29F1588C245032B000A2DBBF /* POCDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		29F1587B244F4ACF00A2DBBF /* DataManagers */ = {
 			isa = PBXGroup;
 			children = (
+				29F1588C245032B000A2DBBF /* POCDataManager.swift */,
 			);
 			path = DataManagers;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				29F15881244F4ACF00A2DBBF /* POCRouter.swift in Sources */,
 				29F15885244F4ACF00A2DBBF /* POCViewController.swift in Sources */,
 				29F1584F244F307A00A2DBBF /* AppDelegate.swift in Sources */,
+				29F1588D245032B000A2DBBF /* POCDataManager.swift in Sources */,
 				29F15887244F4ACF00A2DBBF /* POCInteractor.swift in Sources */,
 				29F1588B24501AD400A2DBBF /* POCListTableViewCell.swift in Sources */,
 				29F15851244F307A00A2DBBF /* SceneDelegate.swift in Sources */,

@@ -10,12 +10,12 @@
 import UIKit
 
 struct POCModel: Codable {
-    let title: String
-    let rows: [POCListModel]
+    let title: String?
+    let rows: [POCListModel]?
 }
 
 struct POCListModel: Codable {
-    let title: String
-    let description: String
-    let imageHref: String
+    let title: String?
+    let description: String?
+    let imageHref: String?
 }

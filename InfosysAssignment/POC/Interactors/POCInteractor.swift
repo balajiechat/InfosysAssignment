@@ -11,17 +11,37 @@ import UIKit
 
 protocol POCInteractorOutputProtocol: class {
 
-    /* Interactor -> Presenter */
+    func sendData(model: POCViewModel)
+
 }
 
 protocol POCInteractorInputProtocol: class {
 
     var presenter: POCInteractorOutputProtocol?  { get set }
 
-    /* Presenter -> Interactor */
+    func getData()
+
 }
 
 class POCInteractor: POCInteractorInputProtocol {
 
     weak var presenter: POCInteractorOutputProtocol?
+
+    func getData() {
+        guard let url = URL(string: URLList.baseURL.rawValue) else {
+            return
+        }
+        let resource = Resource<POCModel>(url: url)
+        POCDataManager.fetchDataFromServer(resource: resource) { (result) in
+
+            switch result {
+            case .success(let list):
+                self.presenter?.sendData(model: POCViewModel(model: list))
+
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+
 }

@@ -17,7 +17,6 @@ class POCConfigurator: NSObject {
         let interactor = POCInteractor()
         let router = POCRouter()
         let presenter = POCPresenter(interface: view, interactor: interactor, router: router)
-
         view.presenter = presenter
         interactor.presenter = presenter
         router.viewController = view
