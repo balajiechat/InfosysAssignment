@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import SDWebImage
 
 class POCListTableViewCell: UITableViewCell {
 
     var pocModel: POCListViewModel? {
         didSet {
-            //    modelImageView.image = pocModel?.image
+            modelImageView.sd_setImage(with: pocModel?.imageURL)
             titleLabel.text = pocModel?.title
             descriptionLabel.text = pocModel?.description
         }
@@ -70,9 +71,7 @@ class POCListTableViewCell: UITableViewCell {
         modelImageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 10).isActive = true
         modelImageView.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
         modelImageView.widthAnchor.constraint(equalToConstant: 70).isActive = true
-        let heightAnchor = modelImageView.heightAnchor.constraint(equalToConstant: 50)
-        heightAnchor.priority = UILayoutPriority(200)
-        heightAnchor.isActive = true
+        modelImageView.heightAnchor.constraint(equalToConstant: 50).isActive = true
 
         titleLabel.leadingAnchor.constraint(equalTo: modelImageView.trailingAnchor, constant: 10).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -10).isActive = true

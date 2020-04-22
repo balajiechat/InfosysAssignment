@@ -29,7 +29,7 @@ class POCViewController: UIViewController {
     let tableView : UITableView = {
         let table = UITableView()
         table.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        table.estimatedRowHeight = 10
+        table.estimatedRowHeight = 2.0
         table.rowHeight = UITableView.automaticDimension
         table.translatesAutoresizingMaskIntoConstraints = false
         return table
