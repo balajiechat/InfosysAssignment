@@ -42,13 +42,13 @@ struct Resource<T: Codable> {
 
 class POCDataManager {
 
-    static func fetchDataFromServer<T>(resource: Resource<T>, completion: @escaping (Result<T, NetworkError>) -> Void) {
+    static func fetchDataFromServer<T>(using session: URLSession? = URLSession.shared, resource: Resource<T>, completion: @escaping (Result<T, NetworkError>) -> Void) {
         var request = URLRequest(url: resource.url)
         request.httpMethod = resource.httpMethod.rawValue.uppercased()
         request.httpBody = resource.body
         request.addValue(HeaderValueField.contentType.rawValue, forHTTPHeaderField: HeaderKeyField.contentType.rawValue)
 
-        URLSession.shared.dataTask(with: request) { data, _, error in
+        session?.dataTask(with: request) { data, _, error in
             guard let data = data, error == nil else {
                 completion(.failure(.domainError))
                 return
