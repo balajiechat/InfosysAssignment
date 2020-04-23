@@ -14,6 +14,7 @@ protocol POCPresenterProtocol: class {
     var interactor: POCInteractorInputProtocol? { get set }
 
     func getData()
+    func performSelectedAction(name: String)
 
 }
 
@@ -31,6 +32,10 @@ class POCPresenter: POCPresenterProtocol {
 
     func getData() {
         self.interactor?.getData()
+    }
+
+    func performSelectedAction(name: String) {
+        self.router.showAlert(title: "Selected Action", message: name)
     }
 
 }

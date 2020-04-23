@@ -123,4 +123,8 @@ extension POCViewController: UITableViewDataSource, UITableViewDelegate {
         return cell ?? UITableViewCell()
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.presenter?.performSelectedAction(name: "Row \(indexPath.row+1) selected")
+    }
+
 }

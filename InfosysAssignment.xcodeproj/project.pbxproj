@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		196A3C6F9B31BCA2B0DCF4F2 /* Pods_InfosysAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4B174DE1F5BBA7343FA9DA /* Pods_InfosysAssignmentTests.framework */; };
+		29AA7FE32451BCEC002BC7D3 /* InfosysAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29AA7FE22451BCEC002BC7D3 /* InfosysAssignmentUITests.swift */; };
 		29F1584F244F307A00A2DBBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F1584E244F307A00A2DBBF /* AppDelegate.swift */; };
 		29F15851244F307A00A2DBBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F15850244F307A00A2DBBF /* SceneDelegate.swift */; };
 		29F15858244F307C00A2DBBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F15857244F307C00A2DBBF /* Assets.xcassets */; };
@@ -26,6 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		29AA7FE52451BCEC002BC7D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29F15843244F307A00A2DBBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29F1584A244F307A00A2DBBF;
+			remoteInfo = InfosysAssignment;
+		};
 		29F15862244F307D00A2DBBF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29F15843244F307A00A2DBBF /* Project object */;
@@ -37,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		1B85CB524F83447D3AECE734 /* Pods-InfosysAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfosysAssignment.debug.xcconfig"; path = "Target Support Files/Pods-InfosysAssignment/Pods-InfosysAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		29AA7FE02451BCEC002BC7D3 /* InfosysAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfosysAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29AA7FE22451BCEC002BC7D3 /* InfosysAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosysAssignmentUITests.swift; sourceTree = "<group>"; };
+		29AA7FE42451BCEC002BC7D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29F1584B244F307A00A2DBBF /* InfosysAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfosysAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F1584E244F307A00A2DBBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29F15850244F307A00A2DBBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +75,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		29AA7FDD2451BCEC002BC7D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29F15848244F307A00A2DBBF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,11 +101,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29AA7FE12451BCEC002BC7D3 /* InfosysAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				29AA7FE22451BCEC002BC7D3 /* InfosysAssignmentUITests.swift */,
+				29AA7FE42451BCEC002BC7D3 /* Info.plist */,
+			);
+			path = InfosysAssignmentUITests;
+			sourceTree = "<group>";
+		};
 		29F15842244F307A00A2DBBF = {
 			isa = PBXGroup;
 			children = (
 				29F1584D244F307A00A2DBBF /* InfosysAssignment */,
 				29F15864244F307D00A2DBBF /* InfosysAssignmentTests */,
+				29AA7FE12451BCEC002BC7D3 /* InfosysAssignmentUITests */,
 				29F1584C244F307A00A2DBBF /* Products */,
 				6050F02BBF5A24366A39A004 /* Pods */,
 				81BB27E13B97DF915749A1F7 /* Frameworks */,
@@ -99,6 +127,7 @@
 			children = (
 				29F1584B244F307A00A2DBBF /* InfosysAssignment.app */,
 				29F15861244F307D00A2DBBF /* InfosysAssignmentTests.xctest */,
+				29AA7FE02451BCEC002BC7D3 /* InfosysAssignmentUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,6 +242,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		29AA7FDF2451BCEC002BC7D3 /* InfosysAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29AA7FE72451BCEC002BC7D3 /* Build configuration list for PBXNativeTarget "InfosysAssignmentUITests" */;
+			buildPhases = (
+				29AA7FDC2451BCEC002BC7D3 /* Sources */,
+				29AA7FDD2451BCEC002BC7D3 /* Frameworks */,
+				29AA7FDE2451BCEC002BC7D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29AA7FE62451BCEC002BC7D3 /* PBXTargetDependency */,
+			);
+			name = InfosysAssignmentUITests;
+			productName = InfosysAssignmentUITests;
+			productReference = 29AA7FE02451BCEC002BC7D3 /* InfosysAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		29F1584A244F307A00A2DBBF /* InfosysAssignment */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29F1586A244F307D00A2DBBF /* Build configuration list for PBXNativeTarget "InfosysAssignment" */;
@@ -262,6 +309,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = balaji;
 				TargetAttributes = {
+					29AA7FDF2451BCEC002BC7D3 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 29F1584A244F307A00A2DBBF;
+					};
 					29F1584A244F307A00A2DBBF = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -286,11 +337,19 @@
 			targets = (
 				29F1584A244F307A00A2DBBF /* InfosysAssignment */,
 				29F15860244F307D00A2DBBF /* InfosysAssignmentTests */,
+				29AA7FDF2451BCEC002BC7D3 /* InfosysAssignmentUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		29AA7FDE2451BCEC002BC7D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29F15849244F307A00A2DBBF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,6 +450,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		29AA7FDC2451BCEC002BC7D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29AA7FE32451BCEC002BC7D3 /* InfosysAssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29F15847244F307A00A2DBBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,6 +487,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		29AA7FE62451BCEC002BC7D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29F1584A244F307A00A2DBBF /* InfosysAssignment */;
+			targetProxy = 29AA7FE52451BCEC002BC7D3 /* PBXContainerItemProxy */;
+		};
 		29F15863244F307D00A2DBBF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 29F1584A244F307A00A2DBBF /* InfosysAssignment */;
@@ -439,6 +511,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		29AA7FE82451BCEC002BC7D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InfosysAssignmentUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = balaji.InfosysAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InfosysAssignment;
+			};
+			name = Debug;
+		};
+		29AA7FE92451BCEC002BC7D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InfosysAssignmentUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = balaji.InfosysAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InfosysAssignment;
+			};
+			name = Release;
+		};
 		29F15868244F307D00A2DBBF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -615,7 +725,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = InfosysAssignmentTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -637,7 +747,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = InfosysAssignmentTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -654,6 +764,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		29AA7FE72451BCEC002BC7D3 /* Build configuration list for PBXNativeTarget "InfosysAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29AA7FE82451BCEC002BC7D3 /* Debug */,
+				29AA7FE92451BCEC002BC7D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		29F15846244F307A00A2DBBF /* Build configuration list for PBXProject "InfosysAssignment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
