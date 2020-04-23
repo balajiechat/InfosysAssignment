@@ -19,7 +19,7 @@ class POCListTableViewCell: UITableViewCell {
         }
     }
 
-    private let titleLabel : UILabel = {
+    private let titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -67,22 +67,20 @@ class POCListTableViewCell: UITableViewCell {
 
         self.selectionStyle = .none
 
-        modelImageView.topAnchor.constraint(greaterThanOrEqualTo: self.contentView.topAnchor, constant: 10).isActive = true
-        modelImageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 10).isActive = true
-        modelImageView.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
-        modelImageView.widthAnchor.constraint(equalToConstant: 70).isActive = true
-        modelImageView.heightAnchor.constraint(equalToConstant: 50).isActive = true
-
-        titleLabel.leadingAnchor.constraint(equalTo: modelImageView.trailingAnchor, constant: 10).isActive = true
-        titleLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -10).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 10).isActive = true
-
-        descriptionLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor).isActive = true
-        descriptionLabel.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor).isActive = true
-        descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor).isActive = true
-        descriptionLabel.bottomAnchor.constraint(lessThanOrEqualTo: self.contentView.bottomAnchor, constant: -10).isActive = true
-
-
+        NSLayoutConstraint.activate([
+        modelImageView.topAnchor.constraint(greaterThanOrEqualTo: self.contentView.topAnchor, constant: 10),
+        modelImageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 10),
+        modelImageView.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor),
+        modelImageView.widthAnchor.constraint(equalToConstant: 70),
+        modelImageView.heightAnchor.constraint(equalToConstant: 50),
+        titleLabel.leadingAnchor.constraint(equalTo: modelImageView.trailingAnchor, constant: 10),
+        titleLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -10),
+        titleLabel.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 10),
+        descriptionLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
+        descriptionLabel.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor),
+        descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor),
+        descriptionLabel.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -10)
+        ])
     }
 
     required init?(coder: NSCoder) {

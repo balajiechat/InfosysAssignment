@@ -17,7 +17,7 @@ protocol POCInteractorOutputProtocol: class {
 
 protocol POCInteractorInputProtocol: class {
 
-    var presenter: POCInteractorOutputProtocol?  { get set }
+    var presenter: POCInteractorOutputProtocol? { get set }
 
     func getData()
 

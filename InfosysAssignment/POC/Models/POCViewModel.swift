@@ -25,7 +25,7 @@ struct POCViewModel {
     init(model: POCModel) {
         pocModel = model
     }
-    
+
 }
 
 struct POCListViewModel {

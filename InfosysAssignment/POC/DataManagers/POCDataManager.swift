@@ -13,11 +13,11 @@ enum URLList: String {
 }
 
 enum HeaderKeyField: String {
-    case ContentType = "Content-Type"
+    case contentType = "Content-Type"
 }
 
 enum HeaderValueField: String {
-    case ContentType = "application/json"
+    case contentType = "application/json"
 }
 
 enum NetworkError: Error {
@@ -33,7 +33,7 @@ enum HttpMethod: String {
 struct Resource<T: Codable> {
     let url: URL
     var httpMethod: HttpMethod = .get
-    var body: Data? = nil
+    var body: Data?
 
     init(url: URL) {
         self.url = url
@@ -42,13 +42,13 @@ struct Resource<T: Codable> {
 
 class POCDataManager {
 
-    static func fetchDataFromServer<T>(resource: Resource<T>, completion: @escaping (Result<T,NetworkError>) -> Void) {
+    static func fetchDataFromServer<T>(resource: Resource<T>, completion: @escaping (Result<T, NetworkError>) -> Void) {
         var request = URLRequest(url: resource.url)
         request.httpMethod = resource.httpMethod.rawValue.uppercased()
         request.httpBody = resource.body
-        request.addValue(HeaderValueField.ContentType.rawValue, forHTTPHeaderField: HeaderKeyField.ContentType.rawValue)
+        request.addValue(HeaderValueField.contentType.rawValue, forHTTPHeaderField: HeaderKeyField.contentType.rawValue)
 
-        URLSession.shared.dataTask(with: request) { data, response, error in
+        URLSession.shared.dataTask(with: request) { data, _, error in
             guard let data = data, error == nil else {
                 completion(.failure(.domainError))
                 return

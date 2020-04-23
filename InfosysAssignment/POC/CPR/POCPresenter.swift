@@ -33,7 +33,6 @@ class POCPresenter: POCPresenterProtocol {
         self.interactor?.getData()
     }
 
-
 }
 
 extension POCPresenter: POCInteractorOutputProtocol {

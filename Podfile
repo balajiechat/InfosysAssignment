@@ -7,7 +7,8 @@ target 'InfosysAssignment' do
 
   # Pods for InfosysAssignment
   pod 'SDWebImage'
-
+  pod 'SwiftLint'
+  
   target 'InfosysAssignmentTests' do
     inherit! :search_paths
     # Pods for testing

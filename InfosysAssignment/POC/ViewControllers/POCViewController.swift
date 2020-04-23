@@ -11,7 +11,7 @@ import UIKit
 
 protocol POCViewProtocol: class {
 
-    var presenter: POCPresenterProtocol?  { get set }
+    var presenter: POCPresenterProtocol? { get set }
 
     func updateUI(with data: POCViewModel)
 
@@ -55,10 +55,9 @@ class POCViewController: UIViewController {
 
         return table
     }()
-    
+
 	override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.setupUI()
         self.presenter?.getData()
     }
@@ -82,7 +81,8 @@ class POCViewController: UIViewController {
         tableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
         tableView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
-        tableView.register(POCListTableViewCell.self, forCellReuseIdentifier: POCConstants.POCTableViewCellIdentifier.rawValue)
+        let cellID = POCConstants.POCTableViewCellIdentifier.rawValue
+        tableView.register(POCListTableViewCell.self, forCellReuseIdentifier: cellID)
 
         self.view.addSubview(activityIndicatorView)
         activityIndicatorView.center = self.view.center
@@ -116,11 +116,11 @@ extension POCViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: POCConstants.POCTableViewCellIdentifier.rawValue, for: indexPath) as! POCListTableViewCell
-        cell.pocModel = pocViewModel?.list?[indexPath.row]
+        let cellID = POCConstants.POCTableViewCellIdentifier.rawValue
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? POCListTableViewCell
+        cell?.pocModel = pocViewModel?.list?[indexPath.row]
 
-        return cell
+        return cell ?? UITableViewCell()
     }
 
 }
-
